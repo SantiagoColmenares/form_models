@@ -1,0 +1,8 @@
+
+
+<form action="{% url "cretae_persona" %}" method="post">
+    {% csrf_token %}
+    {{ form.label_tag }}
+    {{ form.as_div }}
+
+</form>
