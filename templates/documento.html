@@ -1,0 +1,8 @@
+
+<form action="{% url "create_document" %}" method="post">
+    {% csrf_token %}
+    {{ form.label_tag }}
+    {{ form.as_div }}
+    <button type="submit">Guardar</button>
+</form>
+
